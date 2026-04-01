@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!--FIM DO GOOGLE FONTS-->
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!--FIM DO BOOTSTRAP-->
+    <!-- EMAILJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        emailjs.init("n2vvf8UoMGsHjCTAt");
+    </script>
+    </script>
+    <!-- FIM EMAILJS -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Maria Clara | Desenvolvedora em Formação</title>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">Maria Clara</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projetos">Portfólio</a></li>
+            </ul>
+        </nav>
+        <a href="#contato" class="btn-contato">Contato</a>
+    </header>
+    <section class="hero" id="inicio">
+        <div class="overlay"></div>
+        <div class="conteudo">
+            <img src="images/me 3.jpg" alt="me" class="perfil-img">
+            <h1>Maria Clara</h1>
+            <p>Desenvolvedora em Formação</p>
+            <div class="social-links">
+                <a href="http://linkedin.com/in/maria-clara-da-silvaa" target="_blank"><i
+                        class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/mariadev-blip" target="_blank"><i class="bi bi-github"></i></a>
+                <a href="https://www.instagram.com/heymahy?igsh=MWYyY2V3bHBldXlpcQ%3D%3D&utm_source=qr"
+                    target="_blank"><i class="bi bi-instagram"></i></a>
+            </div><!--social-links-->
+        </div><!--conteudo-->
+    </section><!--hero-->
+
+    <section id="sobre" class="sobre">
+        <div class="sobre-p">
+            <div class="sobre-img">
+                <img src="images/me 2.jpg" alt="Mary">
+            </div><!--sobre-img-->
+            <div class="sobre-txt">
+                <h2>Sobre mim<span>.</span></h2>
+                <h3>Minha introdução</h3>
+                <p>Sou Maria Clara, tenho 18 anos e atualmente curso ADS na Facens (2º semestre).
+                    Sou iniciante na área de tecnologia, mas tenho muito interesse em aprender e explorar
+                    tudo o que esse universo oferece, especialmente em tecnologia e design.</p>
+                <p>Meu objetivo é continuar aprendendo e futuramente me tornar desenvolvedora, criando
+                    projetos que unam criatividade, inovação e soluções funcionais.</p>
+                <a href="docs/curriculo.pdf" download class="btn-cv">
+                    Download CV <i class="bi bi-download"></i>
+                </a>
+            </div><!--sobre-txt-->
+        </div><!--sobre-p-->
+    </section><!--sobre-->
+
+    <!-- SKILLS -->
+    <section class="skills" id="skills">
+        <h2>SKILLS</h2>
+        <p>Meus conhecimentos.</p>
+
+        <div class="skills-container">
+            <!-- FRONTEND -->
+            <div class="skill-box">
+                <div class="skill-header">
+                    <h3><i class="bi bi-laptop"></i> Frontend Developer</h3>
+                    <button class="toggle-btn"><i class="bi bi-chevron-down"></i></button>
+                </div>
+                <div class="skill-content">
+                    <div class="bar" data-skill="55">
+                        <span class="label">HTML</span>
+                        <span class="percent">55%</span>
+                        <div class="progress">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="bar" data-skill="40">
+                        <span class="label">CSS</span>
+                        <span class="percent">40%</span>
+                        <div class="progress">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="bar" data-skill="2">
+                        <span class="label">JavaScript</span>
+                        <span class="percent">2%</span>
+                        <div class="progress">
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BACKEND -->
+            <div class="skill-box">
+                <div class="skill-header">
+                    <h3><i class="bi bi-hdd-stack"></i> Backend Developer</h3>
+                    <button class="toggle-btn"><i class="bi bi-chevron-down"></i></button>
+                </div>
+                <div class="skill-content">
+                    <div class="bar" data-skill="10">
+                        <span class="label">Java</span>
+                        <span class="percent">10%</span>
+                        <div class="progress">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="bar" data-skill="5">
+                        <span class="label">Note.js</span>
+                        <span class="percent">5%</span>
+                        <div class="progress">
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="projetos">
+        <h2>Portfólio</h2>
+        <p>Meus projetos.</p>
+
+        <div class="portfolio-container">
+            <button class="prev"><i class="bi bi-chevron-left"></i></button>
+
+            <div class="portfolio-wrapper">
+                <div class="portfolio-item">
+                    <img src="images/projeto1.jpg" alt="Projeto 1">
+                    <div class="portfolio-info">
+                        <h3>Em breve</h3>
+                        <p>Este projeto está em desenvolvimento e será lançado em breve.</p>
+                        <a href="#" class="btn-demo">Em breve <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="images/projeto2.jpg" alt="Projeto 2">
+                    <div class="portfolio-info">
+                        <h3>Indisponível no momento.</h3>
+                        <p>Este projeto está temporariamente indisponível.</p>
+                        <a href="#" class="btn-demo">Em breve <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="images/projeto3.jpg" alt="Projeto 3">
+                    <div class="portfolio-info">
+                        <h3>Em breve</h3>
+                        <p>Este projeto está em desenvolvimento e será lançado em breve.</p>
+                        <a href="#" class="btn-demo">Em breve <i class="bi bi-arrow-right"></i></a>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <button class="next"><i class="bi bi-chevron-right"></i></button>
+        </div>
+
+        <div class="dots"></div>
+    </section>
+    </div><!--portfolio-container-->
+    </section><!--portfolio-->
+
+    <!-- CONTATO -->
+    <section id="contato" class="contato">
+        <h2><span>FALE</span> COMIGO.</h2>
+        <form id="form-contato">
+            <div class="form-group">
+                <input type="text" name="user_name" placeholder="Seu nome completo:" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="user_email" placeholder="Seu e-mail:" required>
+            </div>
+            <div class="form-group">
+                <input type="tel" name="user_phone" placeholder="Seu celular:" required>
+            </div>
+            <div class="form-group">
+                <textarea name="message" placeholder="Sua mensagem" required></textarea>
+            </div>
+            <button type="submit" class="btn-enviar">ENVIAR</button>
+        </form>
+        <p id="status-msg"></p>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3><span>Maria </span>Clara</h3>
+                <hr>
+                <p><i class="bi bi-envelope"></i> <a
+                        href="mailto:mariaclara.silva.dev@gmail.com">mariaclara.silva.dev@gmail.com</a></p>
+            </div>
+            <div class="footer-right">
+                <a href="http://linkedin.com/in/maria-clara-da-silvaa"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/mariadev-blip"><i class="bi bi-github"></i></i></a>
+                <a href="https://www.instagram.com/heymahy?igsh=MWYyY2V3bHBldXlpcQ%3D%3D&utm_source=qr"><i
+                        class="bi bi-instagram"></i></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
